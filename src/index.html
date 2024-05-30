@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant kazama</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header class="header">
+        <div class="btn_menu icon-menu"></div>
+        <h1 class="logo">Restaurant Kazama</h1>
+        <nav class="menu ocultar_menu">
+            <ul class="adaptador">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#menu_del_dia">plato del dia</a></li>
+                <li><a href="#promocionados">promocionados</a></li>
+                <li><a href="#cocteles">Cócteles</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#nosotras">Nosotras</a></li>
+            </ul>
+        </nav>
+        <div class="btn_carta icon_carta"></div>
+    </header>
+    <section class="vista_carta ocultar_carta">
+    <!-- <section class="vista_carta "> -->
+        <div class="vista_carta_grid">
+            <div class="fila_1">
+                <p><strong>Usuario:</strong>nombre usuario logueado| <a class="link" href="/iniciar_sesion">Iniciar sesion</a></p>
+                <p><strong>Mesa reservada:</strong> 1</p>
+                <h3>Pedidos</h3>
+            </div>
+            <div class="fila_2">
+                <div class="grid_promo" id="pedidos">
+                    <article class="item_promo">
+                        <h4>Ruby Tuesday</h4>
+                        <span class="item_codigo">código: 17114</span>
+                        <img src="https://www.thecocktaildb.com/images/media/drink/qsyqqq1441553437.jpg" alt="https://www.thecocktaildb.com/images/media/drink/qsyqqq1441553437.jpg">
+                        <span class="item_precio">U$S5</span>
+                        <p class="item_panel">
+                            <span class="menos">-</span>
+                            <input class="input_cantidad" type="number" placeholder="0" value="1">
+                            <span class="mas">+</span>
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="fila_3">
+                <p><strong>Total: </strong>US$ 5</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="banner">
+            <span class="titulo_banner">Restaurant Kazama</span>
+        </section>
+        <h2 class="subtitulo" id="menu_del_dia">Platillo del dia</h2>
+        <article class="hero_marco">
+            <h3 class="hero_titulo">ensalada-noodle</h3>
+            <div class="hero_img_marco">
+                <img class="hero_img" src="img/ensalada-noodle.jpg" alt="menu del dia">
+                <img class="hero_img_fantasmal" src="img/ensalada-noodle.jpg" alt="menu del dia">
+            </div>
+        </article>
+        <h2 class="subtitulo" id="promocionados">Promocionados</h2>
+        <section class="grid_promo" id="grid_promo">
+            <!-- <article class="item_promo"></article> -->
+        </section>
+        <h2 class="subtitulo" id="cocteles">Cócteles</h2>
+        <section class="grid_promo" id="grid_cocteles">
+            
+        </section>
+        <button id="cargar_mas">cargar más</button>
+
+        <h2 class="subtitulo" id="nosotras">Nosotras</h2>
+        <section class="texto">
+            <p>
+                Compendemos que todos tienen gustos diferentes y que la variedad aumenta 
+                las posibilidades de encontrar nuevos sabores y gustos favoritos!
+            </p>
+            <p>
+                Por eso nos empeñamos en descubrir mejores recetas dia tras dia y
+                nos interesamos en escuchar a nuestros clientes.
+            </p>
+            <p>
+                Podemos improvisar e inovamos con nuevos ingredientes y gracias a ello 
+                conseguimos el reconocimiento "THE BEST CHEF AWARD".
+            </p>
+            <img class="premio" src="img/chef.jpg" alt="certificado.jpg">
+        </section>
+    </main>
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="col-1">
+                <strong>Mas sobre nosotros</strong>
+                <p>politicas de privacidad</p>
+                <p>terminos de uso</p>
+                <p>soporte tecnico de la web</p>
+            </div>
+            <div class="col-2">
+                <strong>Redes sociales</strong>
+                <div class="lista-iconos">
+                    <span class="social-1"></span>
+                    <span class="social-2"></span>
+                    <!-- <span class="social-3"></span> -->
+                    <span class="social-4"></span>
+                    <!-- <span class="social-5"></span> -->
+                </div>
+            </div>
+            <div class="col-3">
+                <strong>descarga nuestras app</strong>
+                <img src="./img/download_app.png" alt="">
+                <img src="./img/google_play.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>

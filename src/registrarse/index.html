@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/init_sesion.css">
+    <title>registrate</title>
+</head>
+<body>
+    <div class="form_container">
+        <div class="form_white">
+
+                <div class="form">
+                    <a href="/#home" class="back regreso">Inicio</a>
+                    <h1>Registrate</h1>
+                    <form id="form_contact" action="/registrar_cuenta" method="post">
+                        <p>
+                            <label for="username">Nombre de usaurio</label>
+                            <input type="text" id="username" name="username" placeholder="username" autofocus required accesskey="a">
+                        </p>
+                        <p>
+                            <label for="email">Ingresa email</label>
+                            <input id="email" type="email" name="email" placeholder="email" required>
+                        </p>
+                        <p>
+                            <label for="celular">Ingrese su numero</label>
+                            <input type="tel" name="celular" id="celular" placeholder="celular con condigo">
+                        </p>
+                        <p>
+                            <label for="password">Ingresa contraseña</label>
+                            <input id="password" type="password" name="password" placeholder="password" required>
+                        </p>
+                        <p>
+                            <label for="password2">Repite la contraseña</label>
+                            <input id="password2" type="password" name="password2" placeholder="repeat password" required>
+                        </p>
+                        <p><a class="back" href="/iniciar_sesion">iniciar sesion</a><button>registrarse</button></p>
+                        <p><a class="btn-recover" href="/recuperar">recuperar contraseña</a></p>
+                        &nbsp;
+                        <!-- <p><span> </span></p> -->
+                    </form>
+                </div>
+        </div>
+    </div>
+    <script src="../js/js.js"></script>
+</body>
+</html>

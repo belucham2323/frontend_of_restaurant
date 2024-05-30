@@ -1,0 +1,111 @@
+:root{
+    --alto_header:40px;
+    --alto_menu:40px;
+    --bg_icono_menu:url("../../icon/menu.png");
+}
+ul{
+    list-style: none;
+}
+.header{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.btn_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 8;
+    /* font-size: 30px; */
+    
+    border-radius: 12px;
+    height: var(--alto_menu);
+    width: var(--alto_menu);
+    font-size: 24px;
+    
+    /* background-color: #343a40; */
+    /* position: absolute; */
+    /* top: 5px; */
+    /* text-align: center; */
+    /* line-height: 1.5; */
+    background-color: rgba(129, 101, 65, 0.575);
+    color: white;
+}
+.icon-close{
+    background-color: rgba(129, 101, 65, 0.575);
+}
+.btn_carta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    
+    border-radius: 12px;
+    font-size: 24px;
+    height: var(--alto_menu);
+    width: var(--alto_menu);    
+
+    color: white;
+    /* align-self: end; */
+}
+.icon_carta{
+    background-image: var(--bg_icono_menu);
+    background-size: var(--alto_header);
+}
+.icon-close{
+    /* font-size: 20px; */
+    font-size: 18px;
+    line-height: 2;
+    /* color: blue; */
+}
+.menu{
+    /* display: flex; */
+    display: block;
+    /* height: 60px; */
+    /* background-color: rgba(128, 128, 128, 0.575); */
+    background-color: rgba(129, 101, 65, 0.575);
+    /* background-color: #343a4079; */
+    color: white;
+    /* opacity: 0.6; */
+    /* position: absolute; */
+    position: fixed;
+    left: 0%;
+    top: var(--alto_header);
+    transition: 0.3s linear;
+    z-index: 3;
+    padding: 0;
+}
+.menu li{
+    font-size: 18px;
+    /* padding: 16px 24px; */
+}
+.menu li a{
+    padding: 16px 24px;
+    color: white;
+    /* opacity: 1; */
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+}
+.logo{
+    /* width: 100px; */
+    /* height: 44px; */
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    /* padding: 8px; */
+    /* padding: 0px; */
+}
+.ocultar_menu{
+    left: -50%;
+}
+

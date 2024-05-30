@@ -1,0 +1,269 @@
+@import url('./icons.css');
+@import url('./partials/header.css');
+@import url('./partials/footer.css');
+*{
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.subtitulo{
+    text-align: center;
+    padding: 60px 0 10px;
+    /* margin-top: 40px; */
+    /* padding-bottom: 10px; */
+}
+.hero_marco{
+    /* border: 3px solid brown; */
+    /* box-shadow: 1px 1px 2px 2px rgba(165, 42, 42, 0.877); */
+    box-shadow: 0px 2px 4px 4px rgba(165, 42, 42, 0.877);
+    /* animation: hero_animation 4s infinite; */
+    padding: 0px 20px 20px 20px;
+    margin: 0 8px 8px 8px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.hero_titulo{
+    text-align: center;
+    padding: 8px;
+}
+.hero_img_marco{
+    /* animation: hero_animation 2s infinite; */
+}
+.hero_img{
+    width: 100%;
+    display: flex;
+    border-radius: 30px;
+    left: 0;
+    right: 0;
+    animation: hero_animation 4s infinite;
+    /* transition: 2s; */
+    position: absolute;
+    padding: 0px 20px 20px 20px;
+}
+.hero_img_fantasmal{
+    width: 100%;
+    display: flex;
+    opacity: 0;
+}
+@keyframes hero_animation {
+    0%{
+        padding: 0px 20px 20px 20px;
+        /* box-shadow: 1px 1px 2px 2px rgba(165, 42, 42, 0.877); */
+    }
+    10%{
+        padding: 0px;
+        /* box-shadow: 0px 2px 4px 4px rgba(165, 42, 42, 0.877); */
+        /* padding-top: 20px; */
+    }
+    20%{
+        padding: 0px 20px 20px 20px;
+        /* box-shadow: 1px 1px 2px 2px rgba(165, 42, 42, 0.877); */
+    }
+    30%{
+        padding: 0px;
+        /* box-shadow: 0px 2px 4px 4px rgba(165, 42, 42, 0.877); */
+        /* padding-top: 20px; */
+    }
+    40%{
+        padding: 0px 20px 20px 20px;
+        /* box-shadow: 1px 1px 2px 2px rgba(165, 42, 42, 0.877); */
+    }
+    50%{
+        padding: 0px;
+        /* box-shadow: 0px 2px 4px 4px rgba(165, 42, 42, 0.877); */
+        /* padding-top: 20px; */
+    }
+    60%{
+        padding: 0px 20px 20px 20px;
+        /* box-shadow: 1px 1px 2px 2px rgba(165, 42, 42, 0.877); */
+    }
+    100%{
+        padding: 0px 20px 20px 20px;
+        /* box-shadow: 1px 1px 2px 2px rgba(165, 42, 42, 0.877); */
+    }
+}
+/* -------------------------------------------------------- */
+.banner{
+    width: 100%;
+    height: 60vw;
+    /* height: 60vh; */
+    background-repeat: no-repeat;
+    background-size: cover ;
+    transition: 0.7s linear;
+    z-index: 0;
+    background-position: center bottom;
+    animation: hero_temporal 10s infinite;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:hover{
+    /* animation-play-state: paused; */
+}
+.titulo_banner{
+    background-color: rgba(128, 128, 128, 0.3);
+    /* position: absolute; */
+    font-size: 2.5rem;
+    color: white;
+    /* padding: 20px; */
+    text-align: center;
+    margin: 40px;
+}
+@keyframes hero_temporal {
+    0%{
+        background-image: url("../img/hero/restaurant.jpg");
+    }
+    30%{        
+        background-image: url("../img/hero/barra.jpg");
+    }
+    66%{
+        background-image: url("../img/hero/terraza.jpg"); 
+    }
+    100%{
+        background-position: center bottom;
+        background-image: url("../img/hero/restaurant.jpg");
+    }
+}
+/* -------------------------------------------------------- */
+.grid_promo{
+    display: grid;
+    /* grid-template-columns: repeat(1fr,2); */
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    /* background-color: red; */
+    padding: 8px;
+    width: 100%;
+    gap: 8px;
+    box-sizing: border-box;
+}
+.item_promo{
+    /* width: 100%; */
+    /* display: flex; */
+    box-shadow: 1px 1px 2px 2px gray;
+    /* flex-direction: column; */
+    background-color: whitesmoke;
+    border-radius: 8px;
+    /* justify-content: center; */
+    text-align: center;
+    /* -webkit-margin-collapse: collapse; */
+    /* padding: 4px 0; */
+    padding: 8px 0 12px 0;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.item_promo h4{
+    /* text-align: center; */
+}
+.item_promo span{
+    /* text-align: center; */
+}
+.item_promo img{
+    display: flex;
+    width: 100%;
+}
+.item_promo .item_panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -webkit-margin-collapse: collapse; */
+    height: 20px;
+    /* background-color: blue; */
+    /* border:none; */
+    /* padding: 8px 0; */
+    /* margin: 8px 0; */
+}
+.item_promo h4{
+    /* padding: 8px 0; */
+}
+.item_promo .item_precio{
+    /* padding-top: 20px; */
+    /* padding: 80px 0 0 0; */
+}
+.item_promo .input_cantidad{
+    width: 40px;
+    text-align: center;
+    /* border: 1px solid green; */
+    /* border: 0 1px 0 1px; */
+    border-width: 1px 0 1px 0;
+    border-color: gray;
+    border-style: solid;
+    height: 24px;
+
+    /* border: 1px solid red; */
+}
+.item_promo .item_panel span{
+    height: 24px;
+    width: 24px;
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.menos{
+    /* border: 1px solid red; */
+}
+.mas{
+    /* border: 1px solid green; */
+}
+#cargar_mas{
+    font-size: 1rem;
+    width: 40%;
+    padding: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
+.premio{
+    width: 100%;
+    /* height: 60vw; */
+}
+.texto{
+    padding: 0 16px;
+}
+.texto p{
+    margin-bottom: 16px;
+}
+
+.vista_carta{
+    /* display: block; */
+    position: fixed;
+    /* left: 0; */
+    right: 0;
+    top: var(--alto_header);
+    bottom: 0;
+    background-color: bisque;
+    z-index: 2;
+    transition: 0.5s;
+    width: 100%;
+}
+.ocultar_carta{
+    /* display: none; */
+    right: -100%;
+    /* left: unset; */
+}
+.vista_carta_grid{
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    height: 100%;
+}
+.fila_1{
+    background-color: white;
+    padding: 8px;
+}
+.fila_1 h3{
+    text-align: center;
+}
+.fila_3{
+    background-color: white;
+    padding: 8px;
+}

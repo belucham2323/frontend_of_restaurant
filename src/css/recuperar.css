@@ -1,0 +1,106 @@
+@charset "utf-8";
+body{
+    margin:0;
+    font-family:'Source Sans Pro',sans-serif;
+    background-image: url("../img/fondo.jpg");
+    background-attachment: scroll;
+    /* background-repeat: no-repeat; */
+    /* background-size: 100vw 100vh ; */
+    background-size: cover;
+    position: relative;
+    font-size: 22px;
+}
+h1{
+    /* font-size: 22px; */
+    text-align: center;
+}
+.form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.form{
+    max-width: 600px;
+    background-color: rgba(240, 248, 255, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border: 10px solid #BD8D76;
+}
+.form_blue{
+    border-radius: 30px;
+    /* border: 10px solid rgb(38, 38, 134); */
+    border: 10px solid #BD8D76;
+}
+.form_white{
+    /* border: 1px solid white; */
+    /* border-radius: 30px; */
+    
+    border: 1px solid rgba(220, 220, 220, 0.877);
+    border-radius: 20px;
+}
+input{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+label{
+    /* padding-right: 10px; */
+    margin-right: 10px;
+}
+label:hover{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    background-color:  rgb(85,55, 44);
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+}
+button:hover,.back:hover{
+    background-color: rgba( 85,55, 44, 0.795);
+}
+p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.back{
+    color: white;
+    background-color: rgb(85,55, 44);
+    text-decoration: none;
+    padding: 10px 20px;
+        
+    background-image: url("../../icon/back-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: auto;
+    padding-left: 40px;
+}
+.btn-recover{
+    /* si quisiera que se centre deberia usar al padre para que le diga align center */
+    padding: 8px 16px;
+    margin: 0 auto;
+    display: block;
+    color: rgb(117, 81, 68);
+}
+.btn-recover:hover{
+    background-color: rgba( 85,55, 44, 0.795);
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+}

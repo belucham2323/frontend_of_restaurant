@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/recuperar.css">
+    <title>Recuperar cuenta</title>
+</head>
+<body>
+    <div class="form_container">
+        <div class="form_white">
+                <div class="form">
+                    <a href="/#home" class="back regreso">Inicio</a>
+                    <h1>recuperación de cuenta</h1>
+                    <form action="/recuperar_cuenta/enviar_codigo_recuperador" method="post">
+                        <p>
+                            <label for="request">ingrese su email o celular</label>
+                        </p>
+                        <p>
+                            <input type="tel" id="request" name="request" placeholder="ingrese su email o celular" autofocus required accesskey="a">
+                        </p>
+                        
+                        <p><button>recuperar cuenta</button></p>
+                        <p><a class="back" href="/iniciar_sesion">iniciar sesion</a><a class="back" href="/registrarse">registrarse</a></p>
+                    </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
